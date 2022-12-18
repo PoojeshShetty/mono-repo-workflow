@@ -6,7 +6,7 @@ function Header({showSidebar, setShowSidebar}) {
 
   const handleOpenSidebar = () => {
       setShowSidebar(true)
-  }
+  } 
 
   const handleClose = () => {
     setShowSidebar(false)
