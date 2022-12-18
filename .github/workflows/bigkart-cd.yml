@@ -5,10 +5,14 @@ on:
     branches:
       - develop
       - master
+    paths:
+      - 'bighkart/**'
   pull_request:
     branches:
       - develop
       - master
+    paths:
+      - 'bighkart/**'
   workflow_dispatch:
     
 jobs:
