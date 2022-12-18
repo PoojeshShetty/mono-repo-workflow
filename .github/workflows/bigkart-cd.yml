@@ -1,0 +1,31 @@
+name: Bigkart CI workflow
+
+on: 
+  push:
+    branches:
+      - develop
+      - master
+  pull_request:
+    branches:
+      - develop
+      - master
+  workflow_dispatch:
+    
+jobs:
+  lintone:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        run: echo 'hello world'
+        shell: bash
+  
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: goodbye 
+        run: echo 'good bye'
+        shell: bash
+
+
