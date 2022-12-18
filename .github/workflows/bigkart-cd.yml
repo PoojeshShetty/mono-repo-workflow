@@ -6,13 +6,13 @@ on:
       - develop
       - master
     paths:
-      - 'bigkart/**'
+      - 'bighkart/**'
   pull_request:
     branches:
       - develop
       - master
     paths:
-      - 'bigkart/**'
+      - 'bighkart/**'
   workflow_dispatch:
     
 jobs:

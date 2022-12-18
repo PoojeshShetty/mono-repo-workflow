@@ -4,8 +4,6 @@ on:
     branches:
       - develop
       - master
-    paths:
-      - 'videoapp/**'
   pull_request:
     branches: 
       - develop
