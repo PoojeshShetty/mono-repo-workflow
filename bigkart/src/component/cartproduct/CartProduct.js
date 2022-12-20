@@ -5,7 +5,6 @@ import './CartProduct.css'
 function CartProduct({product}) {
 
     const { incrProductQt, decrProductQt, deleteProduct } = useCart()
-
     const handleDeleteProduct = (id,docId) => {
         deleteProduct(id,docId)
     }
