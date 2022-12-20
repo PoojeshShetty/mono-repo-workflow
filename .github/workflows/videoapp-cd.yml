@@ -1,0 +1,23 @@
+name: Video app cli
+on:
+  push:
+    branches:
+      - develop
+      - master
+  pull_request:
+    branches: 
+      - develop
+      - master
+    paths:
+      - 'videoapp/**'
+  workflow_dispatch:
+
+jobs:
+  videoapp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: video app
+        run: echo 'video app'
+        shell: bash
+
